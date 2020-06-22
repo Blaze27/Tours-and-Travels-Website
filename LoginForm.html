@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/loginstyle.css">
+</head>
+<body>
+	<div class="container">
+		<div class="form-box" id="form-box">
+			<div class="button-box">
+				<div id="btn"></div>
+				<button type="button" class="toggle-btn" onclick="login()">Log In</button>
+				<button type="button" class="toggle-btn" onclick="signup()">Sign Up</button>
+			</div>
+				<div class="social-icons" id="social-icons">
+				<img src="images/google-brands.svg" alt="social-icons">
+				<img src="images/facebook-brands.svg" alt="social-icons">
+				<img src="images/twitter-brands.svg" alt="social-icons">
+			</div>
+			<form id="login" class="input-group">
+
+				<i class="fas fa-user" aria-hidden="true"><img src="images/user-solid.svg" style="width: 15px; height: 15px;"></i>
+				<input type="text" placeholder="Username" class="input-field" id="loginusername" required>
+
+				<i class="fas fa-lock" aria-hidden="true"><img src="images/lock-solid.svg" style="width: 15px; height: 15px;"></i>
+				<input type="Password" placeholder="Password" class="input-field" id="loginpassword" required>
+
+				<input type="checkbox" class="checkbox" id="remember-me"><span>Remember Password?</span>
+				<button type="submit" class="submit-btn" id="login-btn">Log In</button>
+				<span id="adminerror"></span>
+				<button type="submit" id="submit-btn" class="submit-btn" onclick="window.location.href='admin.html';">Log In As Admin</button>
+			</form>
+			<form id="signup" class="input-group" onsubmit="return validation()">
+
+				<i class="fas fa-user" aria-hidden="true"><img src="images/user-solid.svg" style="width: 15px; height: 15px;"></i>
+				<input type="text" placeholder="Name" class="input-field" id = "name" required>
+				<span id="nameerror" class="text-danger font-weight-bold"> </span>
+				<br>
+				<i class="fas fa-user" aria-hidden="true"><img src="images/user-solid.svg" style="width: 15px; height: 15px;"></i>
+				<input type="text" placeholder="Username" class="input-field" id = "username" required>
+				<span id="usernameerror" class="text-danger font-weight-bold"> </span><br>
+
+				<i class="fas fa-user" aria-hidden="true"><img src="images/envelope-solid.svg" style="width: 15px; height: 15px;"></i>
+				<input type="text" placeholder="Email ID" class="input-field" id = "email" required>
+				<span id="emailerror" class="text-danger font-weight-bold"> </span><br>
+
+				<i class="fas fa-user" aria-hidden="true"><img src="images/birth-solid.svg" style="width: 15px; height: 15px;"></i>
+				<input type="text" placeholder="Date of Birth" class="input-field" id = "dob" required>
+				<span id="doberror" class="text-danger font-weight-bold"> </span><br>
+
+				<i class="fas fa-user" aria-hidden="true"><img src="images/phone-solid.svg" style="width: 15px; height: 15px;"></i>
+				<input type="text" placeholder="Phone Number" class="input-field" id = "phno" required>
+				<span id="phnoerror" class="text-danger font-weight-bold"> </span><br>
+
+				<i class="fas fa-user" aria-hidden="true"><img src="images/lock-solid.svg" style="width: 15px; height: 15px;"></i>
+				<input type="Password" placeholder="Password" class="input-field" id = "password" required>
+				<span id="passworderror" class="text-danger font-weight-bold"> </span><br>
+
+				<input type="checkbox" class="checkbox"><span>I agree to the Terms and Conditions</span><br>
+				<button type="submit" class="submit-btn">Sign Up</button>
+			</form>
+		</div>
+
+		
+
+	</div>
+
+
+
+	<!--
+	<div class="login-box">
+		<h2 style="font-size: 1.7em;">Login</h2>
+		<div class="textbox">
+			<i class="fas fa-user" aria-hidden="true"><img src="images/user-solid.svg" style="width: 15px; height: 15px;"></i>
+			<input type="text" placeholder="Username" name="" value="">
+		</div>
+
+		<div class="textbox">
+			<i class="fas fa-lock" aria-hidden="true"><img src="images/lock-solid.svg" style="width: 15px; height: 15px;"></i>
+			<input type="Password" placeholder="Password" name="" value="">
+		</div>
+
+		<input class="btn" type="button" name="" value="Sign In">
+	</div>
+-->
+<script type="text/javascript" src="js/loginscript.js"></script>
+
+</body>
+</html>

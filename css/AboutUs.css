@@ -1,0 +1,171 @@
+* {
+	box-sizing: border-box;
+}
+
+html body {
+	font-size: 16px;
+	color: #fff;
+	background-color: #e6e6e6;
+	font-family: 'Oxygen', sans-serif;
+}
+.container {
+	width: 80%;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+
+header {
+	background-color: #ffffff;
+}
+
+header::after {
+	content: '';
+	display: table;
+	clear: both;
+}
+.logo {
+	float: left;
+	padding: 28px 0;
+}
+.logo:hover {
+	cursor: pointer;
+}
+#header-nav {
+	float: right;
+}
+
+#header-items {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#header-items li {
+	display: inline-block;
+	margin-left: 50px;
+	padding-top: 30px;
+	position: relative;
+}
+
+#header-items a {
+	color: #000000;
+	text-decoration: none;
+	text-transform: capitalize;
+	font-size: 1.1em;
+	text-shadow: 1px 1px 2px #000000;
+}
+
+#header-items a:hover {
+	color: #0000e6;
+
+}
+
+#header-items a::before {
+	content: '';
+	display: block;
+	height: 1px;
+	background-color: #0000e6;
+	position: absolute;
+	top: 0;
+	width: 0%;
+	transition: all ease-in-out 180ms;
+}
+
+#header-items a:hover::before {
+	width: 100%;
+}
+
+#nav-button {
+	background-color: #0000e6;
+	border: none;
+	color: white;
+	padding: 10px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	transition: all 0.5s;
+	cursor: pointer;
+}
+
+
+
+#nav-button span {
+	cursor: pointer;
+	display: inline-block; position: relative; transition: 0.5s;
+
+}
+
+#nav-button span:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0; top: 0; right: -20px; transition: 0.5s;
+}
+
+#nav-button:hover span {
+	padding-right: 25px;
+}
+
+#nav-button:hover span:after {
+	opacity: 1;
+	right: 0;
+}
+
+#nav-button a {
+	background-color: #0000e6;
+	border: none;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+}
+
+.heading {
+	color: #0000e6;
+	text-align: center;
+}
+div.slide-up {
+	overflow: hidden;
+}
+div.slide-up p {
+    animation: 1.8s slide-up;
+    margin-top: 0%;
+}
+
+@keyframes slide-up{
+	from{
+		margin-top: 100%;
+		height: 300%;
+
+	}
+	to{
+		margin-top: 0%;
+		height: 100%;
+
+	}
+}
+
+.slide-up {
+	text-align: center;
+	width: 80%;
+	background-color: #fff;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: 2px 6px 10px 2px rgba(153, 153, 255, 0.3), 1px 8px 21px 1px rgba(153, 153, 255,0.21);
+}
+
+.slide-up p {
+	text-align: center;
+	text-shadow: 0.2px 0.2px 3px #ccccff; 
+	margin-top: 20px;
+	color: #595959;
+	font-size: 1.2em;
+	margin: 0px 40px 15px 40px;
+	margin-top: 40px;
+
+}
+h1 {
+	margin-top: 7%;
+	text-shadow: 0.8px 0.8px 3px #8080ff;
+}
+

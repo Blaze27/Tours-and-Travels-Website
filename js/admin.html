@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/admin.css">
+</head>
+<body>
+	<div class="container">
+		<div class="form-box" id="form-box">
+			<div class="button-box">
+				<div id="btn"></div>
+				<button type="button" class="toggle-btn" onclick="search()">Search</button>
+				<button type="button" class="toggle-btn" onclick="insert()">Insert</button>
+			</div>
+			<form id="search" class="input-group">
+
+				<!--<i class="fas fa-user" aria-hidden="true"><img src="images/search-solid.svg" style="width: 15px; height: 15px;"></i>-->
+				<input type="text" placeholder="Search..." class="input-field" required>
+
+				<!--<i class="fas fa-lock" aria-hidden="true"><img src="images/lock-solid.svg" style="width: 15px; height: 15px;"></i>
+				<input type="Password" placeholder="Password" class="input-field" required>
+
+				<input type="checkbox" class="checkbox" id="remember-me"><span>Remember Password?</span>-->
+				<button type="submit" class="submit-btn" id="login-btn">Search</button>
+				<!--
+				<button type="submit" id="submit-btn" class="submit-btn" onclick="shift()">Log In As Admin</button>
+			-->
+			</form>
+			<form id="insert" class="input-group">
+
+				<i class="fas fa-user" aria-hidden="true"><img src="images/location-solid.svg" style="width: 15px; height: 15px; margin-bottom: 0px;"></i>
+				<input type="text" placeholder="Name of Place.." class="input-field" id = "name" required>
+				<span id="nameerror" class="text-danger font-weight-bold"></span>
+				<br>
+				<i class="fas fa-user" aria-hidden="true"><img src="images/city-solid.svg" style="width: 15px; height: 15px; margin-bottom: 0px"></i>
+				<input type="text" placeholder="City.." class="input-field" id = "city" required>
+				<span id="cityerror" class="text-danger font-weight-bold"> </span>
+				<br>
+				<i class="fas fa-user" aria-hidden="true"><img src="images/satellite-solid.svg" style="width: 15px; height: 15px; margin-bottom: 0px"></i>
+				<input type="text" placeholder="State.." class="input-field" id = "state" required>
+				<span id="stateerror" class="text-danger font-weight-bold"> </span>
+				<br>
+				<i class="fas fa-user" aria-hidden="true"><img src="images/map-pin-solid.svg" style="width: 15px; height: 15px; margin-bottom: 0px"></i>
+				<input type="text" placeholder="PinCode.." class="input-field" id = "pincode" required>
+				<span id="pincodeerror" class="text-danger font-weight-bold"> </span>
+				<br>
+				<i class="fas fa-user" aria-hidden="true"><img src="images/images-solid.svg" style="width: 15px; height: 15px; margin-bottom: 0px"></i>
+				<input type="text" placeholder="Image URL 1.." class="input-field" id = "img1" required>
+				
+				<br>
+				<i class="fas fa-user" aria-hidden="true"><img src="images/images-solid.svg" style="width: 15px; height: 15px; margin-bottom: 0px"></i>
+				<input type="text" placeholder="Image URL 2.." class="input-field" id = "img2" required>
+				
+				<br>
+				<i class="fas fa-user" aria-hidden="true"><img src="images/images-solid.svg" style="width: 15px; height: 15px; margin-bottom: 0px"></i>
+				<input type="text" placeholder="Image URL 3.." class="input-field" id = "img3" required><br>
+
+				<i class="fas fa-user" aria-hidden="true"><img src="images/hotel-solid.svg" style="width: 15px; height: 15px; margin-bottom: 0px"></i>
+				<input type="text" placeholder="Nearest Hotel.." class="input-field" id = "hotel-distance" required>
+				<span id="hotel-distanceerror" class="text-danger font-weight-bold"> </span>
+				<br>
+				<i class="fas fa-user" aria-hidden="true"><img src="images/plane-departure-solid.svg" style="width: 15px; height: 15px; margin-bottom: 0px"></i>
+				<input type="text" placeholder="Nearest Airport.." class="input-field" id = "airport" required>
+				<br>
+				<i class="fas fa-user" aria-hidden="true"><img src="images/subway-solid.svg" style="width: 15px; height: 15px; margin-bottom: 0px"></i>
+				<input type="text" placeholder="Nearest Railway Station.." class="input-field" id = "railway-station" required>
+				<br>
+				<br>
+
+				<textarea cols="43" rows="5" placeholder="Description..." class="text-input contact-input" id="desc"></textarea>
+				<br>
+				<button type="submit" class="submit-btn" onclick="return validation()">Update</button>
+			</form>
+		</div>
+	</div>
+<script type="text/javascript" src="js/admin.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+.form-box1 {
+	width: 380px;
+	height: 1020px;
+	position: relative;
+	margin : 6% auto;
+	background: #fff;
+	padding: 5px;
+	border : 1px solid #0000e6;
+	border-radius: 10px;
+	overflow: hidden; 
+}
